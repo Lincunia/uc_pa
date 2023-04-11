@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath} %Paquetes matemáticos de la American Mathematical Society
+
+\begin{document}
+  \begin{titlepage}
+    \centering
+    {\includegraphics[width=0.2\textwidth]{../../pictures/uc.png}\par}
+    \vspace{1cm}
+    {\bfseries\LARGE Universidad Central\par}
+    \vspace{1cm}
+    {\scshape\Large Facultad de Ingenier\'ia de la que fuera \par}
+    \vspace{3cm}
+    {\scshape\Huge Intento pretensioso de aprender \LaTeX \par}
+    \vspace{3cm}
+    {\itshape\Large Proyecto Fin de Carrera \par}
+    \vfill
+    {\Large Autor: \par}
+    {\Large Un estudiante \par}
+    \vfill
+    {\Large \today \par}
+  \end{titlepage}
+
+  \begin{equation*}
+    F = ma \quad\text{Segunda ley de Newton} % El quad es para crear un espacio entre la ecuación y el texto
+    % TAmbién está \textit para texto en cursiva, \textbf para texto en negrita y \textsf para tipo de letra sans serjf.
+  \end{equation*}
+
+  \begin{align*}
+    ((a+b)^2 = a^2 + 2ab + b^2\\
+    (a-b)^2 = a^2 - 2ab + b^2\\
+    (a+b)(a-b) = a^2 - b^2
+  \end{align*}
+  % lo mismo que el align pero sin números
+  \begin{equation*}
+    \begin{split}
+      (a+b)^2& = (a+b)(a+b)\\
+      & = a^2 + ab + ab + b^2\\
+      & = a^2 + 2ab + b^2
+    \end{split}
+  \end{equation*}
+
+
+  {\bfseries\LARGE Prueba para escribir la parte lógica del taller \par}
+
+  \begin{equation*}
+    \begin{split}
+      p: \quad\text{“El paro continúa”} \\
+      q: \quad\text{”Nos quedaremos en casa a limpiar”} \\
+      r: \quad\text{”Nos quedaremos en casa a dormir”} \\
+      s: \quad\text{”No iremos mañana a la fiesta”} \\\\
+    \end{split}
+  \end{equation*}
+  \begin{equation*}
+    \begin{split}
+      \left( p \lor q \right) \implies \left( r \lor s \right) \\
+      \left( r \lor s \right) \implies \neg t \\
+      t \\
+      \noindent\rule{5cm}{0.4pt} \\
+      p \\\\
+    \end{split}
+  \end{equation*}
+  \begin{align}
+    \left( p \lor q \right) \implies \left( r \lor s \right) \quad\text{ \indent  Premisa 1} \\
+    \left( r \lor s \right) \implies \neg t \quad\text{  \indent Premisa 2} \\
+    t \quad\text{ \indent Premisa 3} \\
+    \left(p \lor q \right) \implies \neg t \quad\text{  \indent SH(1, 2)} \\
+    \neg \left( p \lor q \right) \quad\text{ \indent MTT(3, 4)} \\
+    \neg p \land \neg q \quad\text{ \indent Ley de Morgan (5)} \\
+    \neg p \quad\text{ \indent RS (6)} \\
+    \neg q \quad\text{ \indent RS (6)}
+  \end{align}
+  Conclusión: No es válido el argumento
+\end{document}
