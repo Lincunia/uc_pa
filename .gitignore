@@ -1,7 +1,0 @@
-*.exe
-*.out
-
-*.aux
-*.log
-*.pdf
-test.c
