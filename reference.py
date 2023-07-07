@@ -16,3 +16,14 @@ def test_of_proof():
     print(f'Order 2: {sorted(a)}')
     a = ['Love', 'Brain', 'Heart', 'control', 'Caffeinate']
     print(f'Order 3: {sorted(a)}')
+    print(f'Order 3 (Pero sin ordenar): {a}')
+    a = [3, 1, 4, 6, 9, 0]
+    print(f'\nAhora el uso de list.sort: {a.sort()}')
+    len(a)
+
+
+def outer_and_inner():
+    func = el.outer()
+    func                # Outer
+    func()              # Inner
+    el.outer()()        # Outer and Inner
