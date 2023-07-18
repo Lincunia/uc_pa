@@ -1,5 +1,4 @@
-#include "basic.h"
-#include "other_functions.cpp"
+#include "basic.hpp"
 
 int main(void) {
   char opt;

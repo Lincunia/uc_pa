@@ -1,3 +1,5 @@
+#include "basic.hpp"
+
 void clear_it() {
   int c;
   while ((c = getchar()) != '\n' && c != EOF);

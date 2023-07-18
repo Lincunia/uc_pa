@@ -6,10 +6,10 @@ adicionales
 */
 #include <iostream>
 #include <cassert>
-using std::cout, std::endl, std::cin;
+using std::cout;
 
 int to_check(int);
-void reduce(int *, int *);
+void reduce(int &, int &);
 
 int main(){
     assert(to_check(520)==1700);
@@ -27,16 +27,16 @@ int to_check(int s){
 	int v=0, m=0;
 	while(s>180){
         v+=200;
-        reduce(&s, &m);
+        reduce(s, m);
     }
     while(s>=60){
-        reduce(&s, &m);
+        reduce(s, m);
     }
 	v+=500;
 	cout << "Usted estuvo llamando por " << m << " minutos, por lo que el valor a cobrar es $" << v << ". Gracias por usar el programa :)\n";
 	return v;
 }
-void reduce(int *s, int *m){
-    *s-=60;
-    *m+=1;
+void reduce(int &s, int &m){
+    s-=60;
+    m+=1;
 }
