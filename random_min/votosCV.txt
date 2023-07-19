@@ -1,0 +1,3 @@
+[[candidato1, candidato2, candidato3, votoenblanco, votonulo, candidato2, candidato3, candidato1, votoenblanco, votonulo, candidato3, candidato1],
+[votonulo, candidato2, candidato3, candidato1, votoenblanco, votonulo, candidato3, candidato1, candidato2, candidato3, candidato1],
+[candidato2, candidato3, candidato1, candidato2, candidato3, candidato1, candidato2, candidato3, candidato1, votoenblanco, votonulo, candidato3, candidato1]]
