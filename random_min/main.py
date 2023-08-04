@@ -15,35 +15,40 @@ def ch1():
                        "votonulo": []})
     # La fila auxiliar vacia
     row = list()
-    # Se crea un rango como índice tanto para las lineas del archivo como en el DataFrame
-    for l in range(3):
+    # Se crea un rango como índice tanto para las lineas del archivo como en
+    # el DataFrame
+    for line in range(3):
         # Se recorren los caracteres de la línea actual
-        for i in lines[l]:
+        for i in lines[line]:
             # Se eliminan los caracteres '[', ']', '\n', ','
             if i in "[\n],":
-                lines[l] = lines[l].replace(i, '')
-        # Se coloca una lista con los candidatos puestos en la linea en la que se encuentra
-        wrd = lines[l].split(' ')
-        # Se cuentan los elementos que se referencian en las columnas del DataFrame
+                lines[line] = lines[line].replace(i, '')
+        # Se coloca una lista con los candidatos puestos en la linea en la que
+        # se encuentra
+        wrd = lines[line].split(' ')
+        # Se cuentan los elementos que se referencian en las columnas del
+        # DataFrame
         for i in df.columns:
             row.append(wrd.count(i))
         # Se insertan la cantidad en el DataFrame
-        df.loc[l] = row
+        df.loc[line] = row
         # Se limpia la fila auxiliar
         row.clear()
     return df
 
 
 def ch2(df):
-    # Se opera de forma automática los valores de DataFrame para dar una gráfica en forma de barra
-    a = df.plot.bar(rot=0)
+    # Se opera de forma automática los valores de DataFrame para dar una
+    # gráfica en forma de barra
+    df.plot.bar(rot=0)
     # Es una gráfica
     plt.xlabel("Numero de mesas")
     # Se guarda como "barras.png"
     plt.savefig("barras")
 
-    # Se opera de forma automática los valores de DataFrame para dar una gráfica en forma de lineas
-    b = df.plot()
+    # Se opera de forma automática los valores de DataFrame para dar una
+    # gráfica en forma de lineas
+    df.plot()
     # Es otra gráfica
     plt.xlabel("Numero de mesas")
     # Se guarda como "lineas.png"
@@ -62,7 +67,8 @@ def ch3(df):
     for i in range(3):
         f_w.write('\n')
         for j in range(5):
-            # Este va insertando poco a poco los datos en forma de filas dentro del DataFrame
+            # Este va insertando poco a poco los datos en forma de filas dentro
+            # del DataFrame
             f_w.write(str(df.loc[i][j])+', ')
         f_w.write('mesa'+str(i+1))
 
