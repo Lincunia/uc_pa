@@ -18,3 +18,7 @@ def outer():
         print('I\'m the inner space of the TARDIS')
     print('I\'m the outer space of the TARDIS')
     return inner
+
+
+def reverse(s):  # This is often used a as list
+    return s[::-1]
