@@ -25,7 +25,8 @@ public:
   DestructorTest(const std::string &txt) : ptr(new std::string(txt)) {}
   ~DestructorTest() {
     delete ptr;
-    std::cout << "Tócate la de Darude: Sandstorm\n"; // No me lo estoy tgomando en serio ¿no?
+    std::cout << "Tócate la de Darude: Sandstorm\n"; // No me lo estoy tgomando
+                                                     // en serio ¿no?
   }
   const std::string content() { return *ptr; }
 };
