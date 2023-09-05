@@ -1,4 +1,9 @@
 \documentclass{article}
+% This package is for the Spanish language
+% \usepackage[spanish]{babel}
+% I consider this package better than the previous one, due to the Unicode
+% options for writting in many languages
+% \usepackage[utf8]{inputenc}
 \usepackage{listings}
 \usepackage{xcolor}
 
@@ -8,38 +13,44 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \lstdefinestyle{mystyle}{
-  backgroundcolor=\color{backcolour},   
-  commentstyle=\color{codegreen},
-  keywordstyle=\color{magenta},
-  numberstyle=\tiny\color{codegray},
-  basicstyle=\ttfamily\footnotesize,
-  breakatwhitespace=false,         
-  breaklines=true,                 
-  captionpos=b,                    
-  keepspaces=true,                 
-  numbers=left,                    
-  numbersep=5pt,                  
-  showspaces=false,                
-  showstringspaces=false,
-  showtabs=true,                  
-  tabsize=2,
-  stringstyle=\color{orange},
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=true,
+	tabsize=2,
+	stringstyle=\color{orange},
 }
 \lstdefinestyle{customc}{
-  belowcaptionskip=1\baselineskip,
-  frame=L,
-  xleftmargin=\parindent,
-  language=C,
-  identifierstyle=\color{blue},
-  keywordstyle=\bfseries\color{green!40!black},
-  commentstyle=\itshape\color{purple!40!black},
-  stringstyle=\color{orange},
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	identifierstyle=\color{blue},
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	stringstyle=\color{orange},
 }
 
 \lstset{style=mystyle}
 
 \begin{document}
-\title{Disco}
+\title{%
+	Test of inserting code in \LaTeX \\
+	\large I know exactly what I want or who I want to be \\
+	I know exactly why I walk and talk like a machine}
+\author{Lincunia}
+
+\maketitle
 
 Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
 labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi

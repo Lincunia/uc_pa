@@ -250,7 +250,7 @@ The pioneering microcomputer that galvanized hardware hackers.
 Building this kit made you learn hacking.  Then you tried to
 figure out what to DO with it.
 
-Apple II ][
+Apple II \]\[
 Steve Wozniak's friendly, flaky, good-looking computer,
 wildly successful and the spark and soul of a thriving industry.
 
@@ -349,7 +349,7 @@ Vietnam vet turned programmer who founded Sirius Software.
 
 Steven Jobs
 Visionary, beaded, non-hacking youngster who took
-Wozniak's Apple II ][, made a lot of deals,
+Wozniak's Apple II \]\[, made a lot of deals,
 and formed a company that would make a billion dollars.
 
 Tom Knight
