@@ -20,9 +20,19 @@ documented in several websites.
 I think that, this thing is necessary to build-up big projects that someone may
 consider as an important tool to deal with something.
 
-One thing that I consider from this schema, is that I want to fix the devices that
-my family (Including me) break down. And the only thing that I want to build is an
-assistance which helps me to know what pieces of those devices are damaged
-(Something that RMS tried to do with his laser printer in 1980; for more
-information, [check this book out](https://foo.be/docs-free/FreeAsFreedom-Stallman.pdf)
-in the first chapter)
+One thing that I consider from this schema, is that I want to fix the devices
+that my family (Including me) break down. And the only thing that I want to
+build is an assistance which helps me to know what pieces of those devices are
+damaged (Something that RMS tried to do with his laser printer in 1980; for
+more information,
+[check this book out](https://foo.be/docs-free/FreeAsFreedom-Stallman.pdf) in
+the first chapter)
+
+# Some situations
+
+We take a part of a script and then we do some data-science but we have to
+check what's happening with the script and then verify the situations by then,
+insert or some extra parts to make it better. We must be careful if something
+is working before it gets used in production.
+
+We must separate What are the thousands of things.
