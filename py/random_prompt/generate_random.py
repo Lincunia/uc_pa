@@ -1,7 +1,9 @@
-import random
+from random import randint
+
 
 def get_random():
-    return random.randint(-20, 20)
+    return randint(-20, 20)
+
 
 def defined_integral():
     min = get_random()
