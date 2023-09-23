@@ -1,9 +1,9 @@
 package option1;
 
-/* TODO: fix this shit*/
+/* I will only say that this works fine */
 
 public class Main {
 	public static void main(String[] args) {
-		new StudentsData();	
+		new StudentsProcessing();	
 	}
 }
