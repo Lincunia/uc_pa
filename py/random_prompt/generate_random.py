@@ -1,4 +1,5 @@
-from random import randint
+from numpy.random import randint
+import generate_it as gi
 
 
 def get_random():
@@ -10,4 +11,4 @@ def defined_integral():
     max = -20
     while min >= max:
         max = get_random()
-    return f'\\int_{{{min}}}^{{{max}}} f(x) \\mathrm{{d}}x\n'
+    return f'\t\t\t\\int_{{{min}}}^{{{max}}} {gi.random_function()} \\mathrm{{d}}x\n'
