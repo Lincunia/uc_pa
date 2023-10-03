@@ -1,4 +1,10 @@
-import numpy as np
+import elemental as el
+
+
+def get_function():
+    random_num = el.np.random.randint(2, 6)
+    func = el.do_numpy_algebra(random_num)
+    return el.get_LaTeX(func, random_num)
 
 
 def random_trigonometrics():
@@ -9,34 +15,18 @@ def random_trigonometrics():
             4: '\\sinh',
             5: '\\cosh',
             6: '\\tanh'}
-    return trigonometric_functions[np.random.randint(1, 6)]
+    return trigonometric_functions[el.np.random.randint(1, 7)]+'(x)'
 
 
-def random_function():
-    random_num = np.random.randint(2, 5)
-    LaTeX_text = ''
-    a = [0] * random_num
-    for i in range(random_num):
-        a[i] = np.random.randint(-20, 20)
-    func = np.poly1d(a)
-    exp = 0
-    for i in range(random_num):
-        exp = random_num - (i + 1)
-        if i >= 1 and func.c[i] > 0:
-            LaTeX_text += '+'
-        if func.c[i] == 0:
-            continue
-        LaTeX_text += f'{func.c[i]}'
-        if exp == 1:
-            LaTeX_text += 'x'
-        if exp > 1:
-            LaTeX_text += f'x^{{{exp}}}'
-    return LaTeX_text
+def random_logarithms():
+    random_num = el.np.random.randint(2, 5)
+    func = el.do_numpy_algebra(random_num)
+    return f'\\frac{{{el.get_LaTeX(el.np.polyder(func), random_num-1)}}}{{\\ln{{({el.get_LaTeX(func, random_num)})}}}}'
 
 
-def main():
-    print(random_function())
-
-
-if __name__ == "__main__":
-    main()
+def get_result():
+    opts = {
+            0: get_function,
+            1: random_trigonometrics,
+            2: random_logarithms}
+    return opts[el.np.random.randint(0, 3)]()

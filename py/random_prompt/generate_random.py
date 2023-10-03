@@ -2,13 +2,9 @@ from numpy.random import randint
 import generate_it as gi
 
 
-def get_random():
-    return randint(-20, 20)
-
-
 def defined_integral():
-    min = get_random()
-    max = -20
+    min = randint(-10, 2)
+    max = -10
     while min >= max:
-        max = get_random()
-    return f'\t\t\t\\int_{{{min}}}^{{{max}}} {gi.random_function()} \\mathrm{{d}}x\n'
+        max = randint(-10, 10)
+    return f'\t\t\t\\int_{{{min}}}^{{{max}}} {gi.get_result()} \\mathrm{{d}}x\n'
