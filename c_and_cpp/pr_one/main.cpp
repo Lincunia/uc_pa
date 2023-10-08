@@ -1,15 +1,9 @@
-#include <iostream>
-using std::cout;
-/*
- * This might have memory leask, which I must understand first and then.
- * I must fix the program
- */
-
-void clear_it();
+#include "basic.h"
 
 int main(void) {
   char opt;
   int clients = 0, sales = 0;
+  import_lines_to_list();
   do {
     cout << "\nNumber of sales: " << sales << "\nNumber of clients: " << clients
          << "\n\n=============================\n"
@@ -23,11 +17,12 @@ int main(void) {
     clear_it();
     switch (opt) {
     case 'a':
-      cout << "Gracias por usar el programa *U*";
+      cout << "Thanks for using the program *U*";
       break;
 
     case 'b':
       clients++;
+      client_time(clients, &sales, opt);
       break;
 
     default:
@@ -36,15 +31,7 @@ int main(void) {
     }
     cout << "\n";
   } while (opt != 'a');
-  cout << "Press enter to finish the program ...";
-  char enter = 0;
-  while (getchar() != '\n')
-    ;
+  delete[] product_opts;
+  delete[] shoppings;
   return 0;
-}
-
-void clear_it() {
-  int c;
-  while ((c = getchar()) != '\n' && c != EOF)
-    ;
 }
