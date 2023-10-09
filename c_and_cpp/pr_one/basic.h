@@ -1,8 +1,8 @@
-#ifndef BEGGIN
-#define BEGGIN
+#ifndef BEGGING_FOR_MORE
+#define BEGGING_FOR_MORE
 #include <fstream>
 #include <iostream>
-using std::cout, std::cin, std::string, std::ifstream;
+using namespace std;
 
 class product {
 private:
@@ -38,7 +38,7 @@ public:
     if (get_product_name().length() <= 8) {
       cout << "\t";
     }
-    cout << "\t" << get_weight() << get_product_weight() << "\t" << get_price()
+    cout << "\t" << get_weight() << get_product_weight() << "\t" << "$" << get_price()
          << "\t" << amount << "\n";
   }
   shopping *next;
@@ -47,21 +47,18 @@ public:
 static product *product_opts = NULL;
 static shopping *shoppings = NULL;
 
-// bas*c_functions.cpp
+// basic_functions.cpp
 void clear_it();
 void pause();
-bool check_product(unsigned short int);
-char ask_yes_or_not(string, char);
-void client_time(int, int *, char);
-char print_piece(int, char);
-// opts_insertion.cpp
-void split_text(string, string *);
-void import_lines_to_list();
-void push_products_list(string *);
-void print_products_opts();
-// check_insertion.cpp
-void get_product(unsigned short int);
+bool ask_yes_or_not(string, char);
+void remove_conent(bool);
+// shopping_functions.cpp
 void print_shoppings();
 void push_shopping_list(product, unsigned int);
-
-#endif // !BEGGIN
+bool print_piece(int, char);
+void client_time(int, int *, char);
+// product_functions.cpp
+product get_product(unsigned short int);
+void push_products_list(string *);
+void import_lines_to_list();
+#endif // !BEGGING_FOR_MORE

@@ -1,7 +1,7 @@
 #include "basic.h"
 
-int main(void) {
-  char opt;
+int main() {
+  char opt, o;
   int clients = 0, sales = 0;
   import_lines_to_list();
   do {
@@ -22,7 +22,7 @@ int main(void) {
 
     case 'b':
       clients++;
-      client_time(clients, &sales, opt);
+      client_time(clients, &sales, o);
       break;
 
     default:
@@ -31,7 +31,6 @@ int main(void) {
     }
     cout << "\n";
   } while (opt != 'a');
-  delete[] product_opts;
-  delete[] shoppings;
+  remove_conent(true);
   return 0;
 }
