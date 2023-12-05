@@ -8,8 +8,11 @@
 /*
  * BASIC STRUCTURES
  */
- 
-typedef enum {false, true} bool; // Boolean in C (IDK why this language doesn't have this)
+
+typedef enum {
+  false,
+  true
+} bool; // You can use #include <stdbool.h> instead
 #define SPEED 344 // Constant off light in (m/s)
 
 /*
