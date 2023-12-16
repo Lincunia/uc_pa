@@ -8,9 +8,9 @@ int main() {
   std::cin >> b;
   std::cout << "Inserte un número para el valor de a: ";
   std::cin >> c;
-  if (a > b && a > c) {
+  if (a > b && a > c)
     std::cout << "a";
-  } else {
+  else {
     if (b > c)
       std::cout << "b";
     else
