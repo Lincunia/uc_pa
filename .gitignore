@@ -1,10 +1,21 @@
+# Python 
 **/__pycache__/
+
+# C & C++ 
 *.exe
 *.out
-*.class
 *.o
 
+# Java
+*.class
+
+# LaTeX
 *.aux
 *.log
 *.pdf
 *.toc
+
+# LaTeX-beamer
+
+*.nav
+*.snm
