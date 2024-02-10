@@ -16,6 +16,11 @@
 *.toc
 
 # LaTeX-beamer
-
 *.nav
 *.snm
+
+# LaTeX-biblatex
+*.bbl
+*.bcf
+*.blg
+*.run.xml
