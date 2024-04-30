@@ -1,7 +1,6 @@
 import logging
 from sys import platform
 
-
 n = 0
 
 
