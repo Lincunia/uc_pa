@@ -7,7 +7,8 @@ public class Menu {
   private char chr, key;
 
   static void displayMenu() {
-    System.out.println("\n\t>>> MENU <<<\n"
+    System.out.println(
+        "\n\t>>> MENU <<<\n"
         + "\na. Salir."
         + "\nb. Invertir cadena."
         + "\nc. Cantidad de vocales y de números de una cadena."
@@ -22,19 +23,19 @@ public class Menu {
     }
     str = getInto.insertString();
     switch (key) {
-      case 'b':
-        functions.invert(str);
-        break;
-      case 'c':
-        functions.vocalAndNumericAmount(str);
-        break;
-      case 'd':
-        chr = getInto.insertChar("Inserte el caracter a buscar:");
-        functions.repetition(str, chr);
-        break;
-      default:
-        System.out.println("Esa opción no se encuentra en el menú");
-        break;
+    case 'b':
+      functions.invert(str);
+      break;
+    case 'c':
+      functions.vocalAndNumericAmount(str);
+      break;
+    case 'd':
+      chr = getInto.insertChar("Inserte el caracter a buscar:");
+      functions.repetition(str, chr);
+      break;
+    default:
+      System.out.println("Esa opción no se encuentra en el menú");
+      break;
     }
     return key;
   }

@@ -5,35 +5,17 @@ import javax.swing.*;
 public class jFrameWorker extends JFrame {
   // private static final long serialVersionUID = 1;
   private ArrayFunctions controller;
-  private JPanel background,
-          buttons,
-          inputPanel,
-          labels;
-  private JLabel title,
-          labelID,
-          labelName,
-          labelAddress,
-          labelPhone,
-          labelSalary,
-          labelRegion,
-          labelInfo;
-  private JButton buttonSave,
-          buttonClear,
-          buttonClose,
-          buttonSearch,
-          buttonDelete;
-  private String regionsArray[] = {
-      "Región Andina",
-      "Región Amazona",
-      "Región Atlantica",
-      "Región Pacífica",
-      "Región Orinoquía"};
+  private JPanel background, buttons, inputPanel, labels;
+  private JLabel title, labelID, labelName, labelAddress, labelPhone,
+      labelSalary, labelRegion, labelInfo;
+  private JButton buttonSave, buttonClear, buttonClose, buttonSearch,
+      buttonDelete;
+  private String regionsArray[] = {"Región Andina", "Región Amazona",
+                                   "Región Atlantica", "Región Pacífica",
+                                   "Región Orinoquía"};
 
-  JTextField textFieldID,
-             textFieldName,
-             textFieldAddress,
-             textFieldPhone,
-             textFieldSalary;
+  JTextField textFieldID, textFieldName, textFieldAddress, textFieldPhone,
+      textFieldSalary;
   JComboBox<String> regions;
 
   public jFrameWorker(int width, int height) {
@@ -134,7 +116,5 @@ public class jFrameWorker extends JFrame {
     buttonSearch.addActionListener(controller);
     buttonDelete.addActionListener(controller);
   }
-  public void setLabel(String txt) {
-    labelInfo.setText(txt);
-  }
+  public void setLabel(String txt) { labelInfo.setText(txt); }
 }

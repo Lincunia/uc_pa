@@ -1,8 +1,11 @@
 package option1;
 
 public class StudentsProcessing {
-  protected double marks[][] = {{3.5, 3.6, 4.2}, {4.2, 4.0, 3.5}, {1.5, 1.8, 4.0}, {1.8, 2.5, 3.8},
-      {2.5, 3.0, 3.2}},
+  protected double marks[][] = {{3.5, 3.6, 4.2},
+                                {4.2, 4.0, 3.5},
+                                {1.5, 1.8, 4.0},
+                                {1.8, 2.5, 3.8},
+                                {2.5, 3.0, 3.2}},
                    average, averageMax;
   private StudentsData[] someStudents;
   protected int i, j, averageIndex;

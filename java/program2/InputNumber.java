@@ -12,7 +12,5 @@ public class InputNumber {
     prt.printIt(etiqueta);
     return getInto.nextInt();
   }
-  void scannerDies() {
-    getInto.close();
-  }
+  void scannerDies() { getInto.close(); }
 }

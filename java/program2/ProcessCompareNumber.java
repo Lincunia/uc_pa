@@ -1,4 +1,4 @@
-package program2; 
+package program2;
 
 /*
  * NOTE: This code is horrible, you may do it better than this. The reason why
@@ -7,8 +7,9 @@ package program2;
  */
 
 public class ProcessCompareNumber {
-  private Print imp = new Print();
-  ProcessCompareNumber(int A, int B, int C) {
+  private Print imp;
+  ProcessCompareNumber() { imp = new Print(); }
+  public void compareTheNumbers(int A, int B, int C) {
     if (A > B) {
       if (B > C)
         imp.printIt(A, B, C);

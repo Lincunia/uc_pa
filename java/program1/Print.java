@@ -15,7 +15,5 @@ public class Print {
     label = (x + "*" + y + "=" + z).toString();
     printThemAll(label);
   }
-  void printThemAll(String labelcito) {
-    System.out.println(label);
-  }
+  void printThemAll(String labelcito) { System.out.println(label); }
 }

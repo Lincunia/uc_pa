@@ -5,13 +5,14 @@ public class TestTables {
   private InputData reader;
   private ProcessTables printThem;
   TestTables() {
-    carganumbers();
-    printThem = new ProcessTables(P, Q, M, N);
+    chargeNumbers();
+    printThem = new ProcessTables();
+    printThem.printTable(P, Q, M, N);
   }
-  void carganumbers() {
+  void chargeNumbers() {
     reader = new InputData();
     P = reader.getInto("Initial multiplicand:");
-    Q = reader.getInto("Final multiplicand);
+    Q = reader.getInto("Final multiplicand:");
     N = reader.getInto("Final multiplier");
     M = reader.getInto("Initial multiplier");
     reader.scannerDies();

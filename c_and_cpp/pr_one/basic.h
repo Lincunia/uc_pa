@@ -38,8 +38,8 @@ public:
     if (get_product_name().length() <= 8) {
       cout << "\t";
     }
-    cout << "\t" << get_weight() << get_product_weight() << "\t" << "$" << get_price()
-         << "\t" << amount << "\n";
+    cout << "\t" << get_weight() << get_product_weight() << "\t" << "$"
+         << get_price() << "\t" << amount << "\n";
   }
   shopping *next;
 };
@@ -61,4 +61,5 @@ void client_time(int, int *, char);
 product get_product(unsigned short int);
 void push_products_list(string *);
 void import_lines_to_list();
+void  print_products();
 #endif // !BEGGING_FOR_MORE

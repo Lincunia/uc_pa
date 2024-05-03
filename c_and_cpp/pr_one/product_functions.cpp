@@ -1,4 +1,5 @@
 #include "basic.h"
+#include <algorithm>
 
 product get_product(unsigned short int id) {
   product *node = product_opts;
@@ -39,4 +40,17 @@ void import_lines_to_list() {
     push_products_list(args);
   }
   file.close();
+}
+void print_products() {
+  product *node = product_opts;
+  while (node != NULL) {
+    cout << node->get_id() << "\t" << node->get_product_name();
+    if (node->get_product_name().length() <= 8) {
+      cout << "\t";
+    }
+    cout << "\t" << node->get_weight() << node->get_product_weight() << "\t"
+         << "$" << node->get_price() << "\n";
+    node = node->next;
+  }
+  delete[] node;
 }

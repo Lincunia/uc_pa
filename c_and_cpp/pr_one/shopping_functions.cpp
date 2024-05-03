@@ -38,12 +38,13 @@ void client_time(int clients, int *sales, char opt) {
   cout << "¡Good morning client number " << clients << "!\n";
 over_again:
   code = 0;
+  print_products();
   cout << "Please insert the code of the product:\n";
   cin >> code;
   if (code > 10 || code < 1) {
     system("clear || cls");
-    cout << "Sorry, that product does not belongs to our cathalog\nDo you "
-            "want to buy something else?\n";
+    cout << "Sorry, that product does not belongs to our cathalog\n"
+            "Do you want to buy something else?\n";
     goto over_again;
   }
   product obj = get_product(code);

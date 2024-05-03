@@ -4,9 +4,7 @@ import java.util.Scanner;
 public class InputString {
   private Scanner sc;
 
-  InputString() {
-    sc = new Scanner(System.in);
-  }
+  InputString() { sc = new Scanner(System.in); }
 
   String insertString() {
     System.out.println("Ingrese la cadena:");
@@ -19,7 +17,5 @@ public class InputString {
     return c;
   }
 
-  void scannerDies() {
-    sc.close();
-  }
+  void scannerDies() { sc.close(); }
 }

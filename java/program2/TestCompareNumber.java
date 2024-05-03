@@ -5,11 +5,12 @@ public class TestCompareNumber {
   private InputNumber reader;
   private ProcessCompareNumber printThem;
   TestCompareNumber() {
+    reader = new InputNumber();
+    printThem = new ProcessCompareNumber();
     loadData();
-    printThem = new ProcessCompareNumber(A, B, C);
+    printThem.compareTheNumbers(A, B, C);
   }
   void loadData() {
-    reader = new InputNumber();
     A = reader.insert("Number 1:");
     B = reader.insert("Number 2:");
     C = reader.insert("Number 3:");
