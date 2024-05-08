@@ -5,7 +5,8 @@ int main() {
   int clients = 0, sales = 0;
   import_lines_to_list();
   do {
-    cout << "\nNumber of sales: " << sales << "\nNumber of clients: " << clients
+    cout << "\nNumber of sales: " << sales
+         << "\nNumber of clients: " << clients
          << "\n\n=============================\n"
          << "\tMENU\n"
          << "=============================\n\n"
