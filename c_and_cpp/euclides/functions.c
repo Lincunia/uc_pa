@@ -14,30 +14,46 @@ void clear_it() {
     c = getchar();
   } while (c != '\n' && c != EOF);
 }
-void option_b() {
-  printf("Please insert a natual number:\n");
-  scanf("%u", &num);
-  printf("%u ", num);
-  if (verify_if_n_is_prime(num)) {
-    printf("is a prime number\n");
-  } else {
-    printf("is a composite number\n");
+
+void print_column_names(int n){
+  for (i = 0; i < n; i++)
+    printf("\t%d", i);
+  printf("\n\n");
+}
+void print_add_table(int n){
+  print_column_names(n);
+  for (i = 0; i < n; i++) {
+    printf("%d:", i);
+    for (j = 0; j < n; j++) {
+      r = i + j;
+      if (r >= n)
+        r -= n;
+      printf("\t%d", r);
+    }
+    printf("\n\n");
   }
 }
-void option_c() {
-  r = 1;
+void print_product_table(int n){
+  print_column_names(n);
+  for (i = 0; i < n; i++) {
+    printf("%d:", i);
+    for (j = 0; j < n; j++) {
+      r = i * j;
+      while (r >= n)
+        r -= n;
+      printf("\t%d", r);
+    }
+    printf("\n\n");
+  }
+}
+bool ask_for_natural_numbers(int *num, int *mum){
   printf("Please insert a natual number 1:\n");
-  scanf("%u", &num);
+  scanf("%u", num);
   printf("Please insert a natual number 2 (less than the first one):\n");
-  scanf("%u", &mum);
-  if (mum > num) {
-    printf("You don't fool me\n");
-    return;
+  scanf("%u", mum);
+  if (*mum > *num) {
+    printf("Can't you read?\n");
+    return 1;
   }
-  while (r) {
-    r = num % mum;
-    printf("%d/%d => %d (%d) + %d\n", num, mum, mum, num / mum, r);
-    num = mum;
-    mum = r;
-  }
+  return 0;
 }

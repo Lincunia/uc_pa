@@ -1,5 +1,9 @@
 #include "basic.h"
 
+/*
+ * TODO: Recreate the Bézout's algorithm
+ */
+
 int main(void) {
   char opt;
   do {
@@ -7,9 +11,10 @@ int main(void) {
            "a. Exit\n"
            "b. Know if a natural number is prime\n"
            "c. Euclides algorithm\n"
+           "d. n|b-a\n"
+           //"e. Bézout's theorem\n"
            "\nInsert the option:\n");
     scanf("%c", &opt);
-    clear_it();
     system("clear || cls");
     switch (opt) {
     case 'a':
@@ -18,18 +23,27 @@ int main(void) {
 
     case 'b':
       option_b();
-      clear_it();
       break;
 
     case 'c':
       option_c();
-      clear_it();
       break;
+
+    case 'd':
+      option_d();
+      break;
+
+    /*
+    case 'e':
+      option_e();
+      break;
+      */
 
     default:
       printf("Wrong option\n");
       break;
     }
+    clear_it();
   } while (opt != 'a');
 
   return EXIT_SUCCESS;
