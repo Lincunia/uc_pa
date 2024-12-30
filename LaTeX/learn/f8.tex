@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\usepackage{amssymb, amsmath}
+\usepackage{amsfonts}
+\newcommand{\field}[1]{\mathbb{#1}}
+\newcommand{\C}{\field{C}}
+\newcommand{\R}{\field{R}}
+
+\begin{document}
+El cambio de coordenadas hacen que aparezca un factor que modifique nuestro
+sistema de ecuaciones. Dependiendo de la función de la que hicieramos de la
+integral. Dependeiendo de la fomra ne cómo quisieramos integrar.
+
+Con base a ese hecho, se tiene que hablar de lo que es un cambio de coordenadas
+$  F: \R \longrightarrow \R^{n} $ Y no se puede obtener una función inversa
+sabiendo que $ r $ es otra cosa. Para los valores de $\tan(x)$ se tienen
+diversos puntos. En general, tenemos este conjunto:
+\begin{align}
+  S = \{(r, \theta)\R^2: r>0, 0 \leq \theta \leq 2 \pi\} \\
+  T(r, \theta) = (r\cos{\theta}, r\sin{\theta})
+\end{align}
+
+\section*{Un ejemplo}
+
+Sea $ T: \R^2 \longrightarrow \R^2 $ una transformación lineal dada por:
+\begin{align}
+  T(u, v) = (2u+v. u-v) \\
+  T(u, v) = \left( \begin{matrix}
+    2 & 1 \\
+    1 & -1
+  \end{matrix} \right)
+  \left( \begin{matrix}
+    u\\
+    v
+  \end{matrix} \right) = \left( \begin{matrix}
+    u \\
+    v
+  \end{matrix} \right)
+\end{align}
+
+Note que $ det(A)\neq0$ luego $T$ tiene inversa. Además $T$ tiene derivadas
+parciales continuas. $T$ es un cambio de coordenadas sabiendo que
+$ T:S \longrightarrow R $ por lo que
+$ S = \{(u, v) \in \R^2 | 0 \leq u \leq 1, -1 \leq v \leq 1\}$
+$ T = \{(x, y) \in \R^2 | 0 \leq u \leq 1, -1 \leq v \leq 1\}$
+
+\section*{Matriz jacobiana}
+Aplicable para transformaciones lineales como se venía viendo desde la sección
+previa.
+
+\begin{align}
+  T(u, v) = (2u+v. u-v)  =  (x, y) \\
+  T_r(u, v) = \left( \begin{matrix}
+    1 & -2 \\
+    1 & 1
+  \end{matrix} \right) \\
+  det(T_r) &= -2 -1 \\
+  &= -3 \\
+\end{align}
+
+\begin{align}
+  T(\rho, \theta, \phi) = e^{\rho^2} * \rho^2 * \sin{\phi} \\
+  T_r(u, v) = \left( \begin{matrix}
+    \cos\theta{}\sin{\phi} & -\rho\sin{ \theta}\cos{\phi} & \rho\cos{\theta}\cos{\phi} \\
+    \sin{\theta}\sin{\phi} & \rho\cos{\theta}\sin{\phi} & \rho\sin{\theta}\cos{\phi} \\
+    \cos{\phi} & 0 & -\rho\sin{\phi} \\
+  \end{matrix} \right) \\
+  deg(T_r(\rho, \theta, \phi)) = -\rho^2\cos{\theta}^2sin{\phi}^3 - \rho^2\sin{\theta}^2\cos{\phi}^2 - \rho^2\cos{\theta}^2\cos^2{\theta} - \rho^2\sin{\theta}^2\sin{\phi}^3 \\
+  deg(T_r(\rho, \theta, \phi)) = -\rho^2(\sin{\phi}^3+\cos{\phi}^2\sin{\phi})
+\end{align}
+
+\section*{Integral indefinida para funciones vectoriales}
+
+La derivada de una función vectorial indica la velocidad de ese objeto en el que
+se desplaza en el punto concreto en el espacio.
+
+Una partícula tiene una velocidad dada por la siguiente expresión:
+$ r'(t) = (e^t-1, 2t) $ Determine la posición de la partícula cuando $ t = 3 $
+si la posición inicial es $ (1, 0) $.
+
+La posición 
+\begin{align}
+  r(t) &= \int r'(t) \mathrm{d}x \\
+  &= (e^t-t+C_1, t^2+C_2)
+\end{align}
+Ahora, para cuando $ r(0) = (1, 0) $, se obtiene por lo tanto:
+\begin{align}
+  e^0 - 0 + C_1 = 1 \implies C_1 = 1 \\
+  0^2 + C_2 = 0 \implies C_2 = 0
+\end{align}
+
+\subsection*{Longitud de curva}
+
+Considere una cuerva C en $ \R^n $ se desea hallar la longitud de $ C $ tome un
+conjunto de puntos en $ C $, $x_0, x_1, x_2, ..., x_n$. Tome ahora los segmentos
+que unen los puntos $ x_k $ con $ x_{k + 1} $, $ k = 0, 1, .., n - 1 $
+
+Sea $ r:I \subseteq \R \longrightarrow \R^{n} $ una paramtrización de $ C $, con
+$ r(t_k) = x_k, k = 0 , ... , n$. Ahora $r(t_x) - r(t_{x - 1})$ es el vector que
+va desde $x_{k - 1}$ hasta $x_{k}$
+
+La longitud de $ C $ es $ L = \sum_{k=1}^{n}||r(t_x) - r(t_{x - 1})||$
+
+Cuando $ x_k \longrightarrow x_{k-1} $ entonces $r(t_x) - r(t_{x - 1}) $ tiende
+a $ r'(t_x) + h $, con $ h = t_x-t_{x_1} = \triangle t $
+
+Así:
+\begin{align}
+  L \approx \sum_{k=1}^{n}||r'(t_x) \triangle t|| \\
+  L &= \lim_{x\rightarrow\infty} \sum_{k=1}^{n}||r'(t_x)|| \triangle t \\
+  &= \int_{t_0}^{t_x} ||r'(t_x)|| \mathrm{d}x
+\end{align}
+
+\subsection*{Ejemplo}
+
+El perímetro de una circunferencia de radio $a$ en $ L = 2*\pi*a $
+
+Para resolver esto tenemos que:
+
+\begin{align}
+  r(t) &= (a\cos(t), a\sin(t)), 0 \leq t \leq 2\pi \\
+  r'(t) &= (-a\sin(t), a\cos(t)) \\
+  || r'(t) || &= \sqrt{(-a\sin(t))^2 + (a\cos(t))^2)} \\
+              &= \sqrt{a^2(\sin(t))^2 + a^2(\cos(t))^2} \\
+              &= a
+\end{align}
+
+\subsection*{Ejemplo}
+
+Halle la longitud de la curva dad por
+$ r(t) = i + t^2j + t^3k, 0 \leq t \leq 1 $ por la que la solución dada es:
+\begin{align}
+  r(t) &= (1, t^2, t^3), 0 \leq t \leq 1 \\
+  r'(t) &= (0, 2t, 3t^2) \\
+  || r'(t) || &= \sqrt{0^2 + (2t)^2 + (3t^2)^2)} \\
+              &= \sqrt{4t^2 + 9t^4} \\
+  L &= \int_0^1 \sqrt{4t^2 + 9t^4} \mathrm{d}t \\
+    &= \int_0^1 \sqrt{4 + 9t^2} \mathrm{d}t \\
+    &= \int_0^1 \sqrt{u} \mathrm{d}t, u = 4 + 9t^2 \implies \mathrm{d}t = \frac{\mathrm{d}u}{18t} \\
+    &= \frac{2}{18} \frac{\sqrt{u}*u}{3}  \\
+    &= \frac{(4 + 9t^2)^{\frac{3}{2}}}{27} \Biggr|_{t=0}^{t=1} \\
+    &= \frac{-8}{27}  \\
+\end{align}
+
+\section{}
+\end{document}

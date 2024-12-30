@@ -1,0 +1,95 @@
+% Esto es una función en latex, y en ella se le pueden meter determinados
+% argumentos; en este caso lo que tenemos es una función que define el formato
+% del documento
+\documentclass{article}
+
+% maketitle begin
+\title{Trying to learn {\LaTeX}}
+\date{\today}
+\author{A dumb student}
+% maketitle end 
+
+% La función con la que se pueden usar herramientas gráficas
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{First title}
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+% Esto es para hacer el texto en negrita
+\textbf{culpa et culpa duis.}
+
+\subsection{The first subtitle}
+
+% Aparentemente ambas funciones generan lo mismo, pero estilísticamente se
+% pueden apreciar las diferencias
+\textit{Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint}
+\emph{cillum sint consectetur cupidatat.}
+
+\subsubsection{How to underline things}
+
+\underline{Sharing with your partner is good, but take into account the stuff
+that you have} That's an important aspect of coexistance with different people.
+
+\section{Second title (Picture time)}
+
+Love is a lie girl, Love is a mess; elling these idiots of loneliness; our love
+survive, our love's alive.
+
+Letters are written, words are spoken; some hearts are better left unbroken; our
+love survive, our love's alive.
+
+Little by little, step by step; we were called the dirty pets; heart to heart
+and side by side, love will never hide.
+
+Locomotion tango on a lonely rainbow; we will dancing baby, don't wait for
+heroes. Locomotion tango on a lonely rainbow; we will dancing baby, romancing
+lady.
+
+Locomotion in my heart; see you dancin' in the darkness. Locomotion let us
+start, let us dancing in the moonlight
+
+% No me pregunten por qué los comentarios los hago en español y el texto lo
+% hago en inglés... ni yo mismo lo sé XD
+At this point, look at those genious in the Figure~\ref{fig:lords} and follow
+their rules
+
+% Esto es para poder insertar las imagenes una vez se tenga el paquete graphicx
+% y de ese modo se puede tener control de lo que se quiere insertar
+\begin{figure}[ht]
+  % \centering <- Figura centrada.
+	% \raggedleft <- Figura alineada a la derecha.
+	% \raggedright <- Figura alineada a la izquierda. 
+  \begin{center}
+    \includegraphics[width=4cm]{../../pictures/saint_ignucius.jpg}
+    \includegraphics[width=4cm]{../../pictures/hippie_jesus.png}
+  \end{center}
+  % Texto en relación con las imágenes
+  \caption{Wise people}
+  % Referencias como figuras cada que se desean llamar
+  \label{fig:lords}
+\end{figure}
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+
+\end{document}
+

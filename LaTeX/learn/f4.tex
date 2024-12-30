@@ -1,0 +1,79 @@
+\documentclass{article}
+% This package is for the Spanish language
+% \usepackage[spanish]{babel}
+% I consider this package better than the previous one, due to the Unicode
+% options for writting in many languages
+% \usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=true,
+	tabsize=2,
+	stringstyle=\color{orange},
+}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	identifierstyle=\color{blue},
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	stringstyle=\color{orange},
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+\title{%
+	Test of inserting code in \LaTeX \\
+	\large I know exactly what I want or who I want to be \\
+	I know exactly why I walk and talk like a machine}
+\author{Lincunia}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+culpa et culpa duis.
+
+\begin{lstlisting}[language=Python]
+def main():
+  print('They\'re all the same, but they feel no sorrow')
+
+if __name__ == '__main__':
+  main()
+\end{lstlisting}
+
+\par But here we got another source code, but from another file:
+
+\lstset{escapechar=@,style=customc}
+\lstinputlisting[langugage=C]{test.c}
+
+\end{document}

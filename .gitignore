@@ -1,0 +1,26 @@
+# Python 
+**/__pycache__/
+
+# C & C++ 
+*.exe
+*.out
+*.o
+
+# Java
+*.class
+
+# LaTeX
+*.aux
+*.log
+*.pdf
+*.toc
+
+# LaTeX-beamer
+*.nav
+*.snm
+
+# LaTeX-biblatex
+*.bbl
+*.bcf
+*.blg
+*.run.xml

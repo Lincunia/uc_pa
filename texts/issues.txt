@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/17318886/fflush-is-not-working-in-linux
+***************************************
+TODO: Learn about the things that comes next
+***************************************
+ * Friendship with the classes in C++
+ * Inheritance and Polymorphism
+ * rvalues, lvalues, xvalues, glvalues, prvalues
+ * Typecasting
+ * Variable argument
+ * Important macros
+***************************************
+
+***************************************

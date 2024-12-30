@@ -1,0 +1,141 @@
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb, amsmath}
+\usepackage{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\geometry{
+	letterpaper,
+	left=25mm,
+	top=25mm
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{
+	A title \\
+	\large Another title to proof my ability to write in \LaTeX
+}
+\author{Lincunia}
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\par Hello, I'm a student who's trying to learn Calculus with this tool that
+everyone is using for documentation. It's just a proof of concept that I use to
+write equations in a way that I can show them to my partners of my university.
+
+\section{Homework - \date{August 18, 2023}}
+
+\par Here we have a collection of math exercises
+
+\begin{enumerate}
+	\item From the exercise number 13:
+	      \begin{gather*}
+		      \int \sin (\pi t) \mathrm{d}t \\
+		      u = \pi t \\
+		      \frac{\mathrm{d}u}{\pi} = \mathrm{d}t \\
+		      \int \sin u \frac{\mathrm{d}u}{\pi} \\
+		      = \frac{1}{\pi} \int \sin u \mathrm{d}u \\
+		      = \frac{1}{\pi} (-\cos u) + c \\
+		      = \frac{-\cos (\pi t)}{\pi} + c
+	      \end{gather*}
+	\item From the exercise number 15
+	      \begin{gather*}
+		      \int \cos^3 \theta \sin \theta \mathrm{d}\theta \\
+	      \end{gather*}
+	\item From the exercise number 17
+	      \begin{gather*}
+		      \int \frac{e^u}{(1-e^u)^2}\mathrm{d}u \\
+	      \end{gather*}
+	\item From the exercise number 19
+	      \begin{gather*}
+		      \int \frac{a+bx^2}{\sqrt{3ax+bx^3}} \mathrm{d}x
+	      \end{gather*}
+	\item From the exercise number 25
+	      \begin{gather*}
+		      \int e^x \sqrt{1+e^x} \mathrm{d}x
+	      \end{gather*}
+\end{enumerate}
+
+\section{Homework - \date{August 23, 2023}}
+
+\begin{enumerate}
+	\item
+	      \begin{gather*}
+		      \int \sin \pi t \mathrm{d}x \\
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int \cos^3 \theta \sin \theta \mathrm{d}\theta \\
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int \frac{e^u}{(1-e^u)^2}\mathrm{d}u \\
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int \frac{a+bx^2}{\sqrt{3ax+bx^3}} \mathrm{d}x
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int e^x \sqrt{1+e^x} \mathrm{d}x
+	      \end{gather*}
+\end{enumerate}
+
+\section{Test - \date{September 8, 2023}}
+\begin{enumerate}
+	\item
+	      \begin{gather*}
+		      f'''(x) = \cos(5x) \\
+		      f''(0) = 2 \Rightarrow f''(x) = \frac{\sin(5x)}{5} + 2 \\
+		      f''(0) = 1 \Rightarrow f'(x) = \frac{-\cos(5x)}{25} + 2x + 1 \\
+		      f''(0) = -1 \Rightarrow f(x) = \frac{-\sin(5x)}{125} + x^2 + x -1
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      f(x) = y \land \frac{\mathrm{d}y}{\mathrm{d}x} = -xe^y \\
+		      \frac{\mathrm{d}y}{e^y} = -x\mathrm{d}x \implies \int \frac{\mathrm{d}y}{e^y} = \int -x\mathrm{d}x \\
+		      \int \frac{\mathrm{d}y}{e^y} = \frac{-x^2}{2} + c
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int \frac{\sin(\sqrt{x})}{\sqrt{x}} \mathrm{d}x \\
+		      u = \sqrt{x} \Rightarrow \mathrm{d}x = \mathrm{d}u2\sqrt{x} \\ \\
+		      \int \frac{\sin(u)}{\sqrt{x}} \mathrm{d}u * 2 * \sqrt{x} \\
+		      \int 2 * \sin(u) \mathrm{d}u \\
+		      -2 * \cos(u) + c \Rightarrow -2 * \cos(\sqrt{x}) + c \\
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int x^2*e^x \mathrm{d}x \\ \\
+		      u = x^2 \Rightarrow \mathrm{d}u = 2*x \mathrm{d}x \\
+		      \mathrm{d}v = e^x \mathrm{d}x \Rightarrow v = e^x \\
+		      x^2 * e^x - \int e^x2*x \mathrm{d}x \\ \\
+		      u = 2x \Rightarrow \mathrm{d}u = 2 \mathrm{d}x \\
+		      \mathrm{d}v = e^x \mathrm{d}x \Rightarrow v = e^x \\
+		      x^2 * e^x - (2x * e^x - 2e^x) + c
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int \sqrt{\sec(x)} * \sec(x)\tan(x) \mathrm{d}x \\
+		      u = \sec(x) \Rightarrow \mathrm{d}x = \frac{\mathrm{d}u}{\sec(x)\tan(x)} \\ \\
+		      \int \sqrt{u} * \sec(x)\tan(x) \frac{\mathrm{d}u}{\sec(x)\tan(x)} \\
+		      \int \sqrt{u} \mathrm{d}u \\
+		      \frac{2*u^{\frac{3}{2}}}{3} + c \Rightarrow \frac{2*\sec(x)\sqrt{\sec(x)}}{3} +c \\
+	      \end{gather*}
+	\item
+	      \begin{gather*}
+		      \int \frac{17x + 25}{2x^2 + 2x - 4} \mathrm{d}x \\ \\
+		      \frac{17x + 25}{2x^2 + 2x - 4} = \frac{A}{2x + 4} + \frac{B}{x - 1} \\
+		      17x + 25 = A(x - 1) + B(2x + 4) \\
+		      x = 1 \Rightarrow 42 = A(0) + B(6) \implies B = \frac{42}{6} = 7 \\
+		      x = -2 \Rightarrow -9 = A(-3) + B(0) \implies A = \frac{-9}{-3} = 3 \\ \\
+		      \int \frac{3}{2x + 4} \mathrm{d}x + \int \frac{7}{x - 1} \mathrm{d}x \\
+		      \frac{3}{2} \ln{\mid{x + 2}\mid} + 7 \ln{\mid{x - 1}\mid} + c
+	      \end{gather*}
+\end{enumerate}
+
+\end{document}\date{\today}
