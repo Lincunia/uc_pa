@@ -1,4 +1,4 @@
-from numpy import zeros, ones, empty
+from numpy import empty, ones, zeros
 
 
 def use_zeros(x, y):

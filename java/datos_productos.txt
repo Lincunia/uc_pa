@@ -1,0 +1,631 @@
+#croissant
+ubicacion: vitrina principal
+precio unidad: 2200
+precio paquete: 13200
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#roscon
+ubicacion: vitrina principal
+precio unidad: 3000
+precio caja: 18000
+stock: no
+marca: la especial
+contenido: 6 unidades
+
+#baguette
+ubicacion: vitrina principal
+precio unidad: 2500
+stock: no
+marca: la especial
+contenido: 20 unidades
+
+#baguettes
+ubicacion: vitrina principal
+precio unidad: 2500
+stock: no
+marca: la especial
+contenido: 20 unidades
+
+#pandebono
+ubicacion: vitrina principal
+precio unidad: 2000
+precio paquete: 12000
+stock: no
+marca: artesanal
+contenido: 6 unidades
+
+#torta
+ubicacion: refrigerador
+precio libra: 10500
+precio caja: 42000
+stock: sí
+marca: dulce hogar
+contenido: 1kg
+
+#pastel
+ubicacion: refrigerador
+precio unidad: 2500
+precio paquete: 10000
+stock: no
+marca: noel
+contenido: 4 unidades
+
+#arequipe
+ubicacion: estante de atras
+precio frasco: 4600
+precio paquete: 9200
+stock: sí
+marca: alpina
+contenido: 250g
+
+#mermelada
+ubicacion: estante de atras
+precio frasco: 5000
+precio paquete: 10000
+stock: sí
+marca: colanta
+contenido: 250g
+
+#tinto
+ubicacion: cafetería
+precio vaso: 1500
+precio termo: 4000
+stock: sí
+marca: casero
+contenido: 250ml
+
+#perico
+ubicacion: cafetería
+precio vaso: 1800
+precio termo: 4500
+stock: sí
+marca: casero
+contenido: 250ml
+
+#capuchino
+ubicacion: cafetería
+precio taza: 3500
+precio grande: 5000
+stock: sí
+marca: casero
+contenido: 300ml
+
+#aromática
+ubicacion: cafetería
+precio taza: 2500
+stock: sí
+marca: natural
+contenido: 250ml
+
+#malteada
+ubicacion: cafetería
+precio vaso: 4500
+sabores: vainilla, fresa, chocolate
+stock: sí
+marca: casera
+
+#huevo
+ubicacion:  estante de atras
+precio unidad: 600
+precio docena: 7200
+stock: sí
+marca: campesino
+contenido: 12 unidades
+
+#mantequilla
+ubicacion: refrigerador
+precio unidad: 4500
+stock: sí
+marca: Alpina
+contenido: 250g
+
+#sandwich
+ubicacion: mostrador
+precio unidad: 4500
+stock: sí
+ingredientes: jamón, queso, lechuga, tomate
+
+#empanada
+ubicacion: vitrina caliente
+precio unidad: 1500
+precio 3x: 4000
+stock: sí
+relleno: carne o pollo
+
+#tamales
+ubicacion: vitrina caliente
+precio unidad: 6000
+stock: sí
+marca: tradicional
+
+#churro
+ubicacion: vitrina principal
+precio unidad: 1500
+precio paquete: 8000
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#cafe
+ubicacion: mostrador
+precio unidad: 1500
+precio paquete: 0
+stock: sí
+marca: nescafe
+contenido: 1 taza
+
+#tinto
+ubicacion: mostrador
+precio unidad: 1000
+precio paquete: 0
+stock: sí
+marca: colcafé
+contenido: 1 taza
+
+#perico
+ubicacion: mostrador
+precio unidad: 1200
+precio paquete: 0
+stock: sí
+marca: nescafé
+contenido: 1 taza
+
+#capuccino
+ubicacion: mostrador
+precio unidad: 2500
+precio paquete: 0
+stock: sí
+marca: juan valdez
+contenido: 1 taza
+
+#galleta
+ubicacion: vitrina principal
+precio unidad: 1300
+precio paquete: 7500
+stock: sí
+marca: saludable
+contenido: 6 unidades
+relleno: con chocolate
+
+#buñuelo
+ubicacion: vitrina principal
+precio unidad: 1000
+precio paquete: 6000
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#almojabana
+ubicacion: vitrina principal
+precio unidad: 1800
+precio paquete: 10500
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#flan
+ubicacion: refrigerador
+precio unidad: 3000
+precio paquete: 16000
+stock: sí
+marca: dulce hogar
+contenido: 6 unidades
+
+#gelatina
+ubicacion: refrigerador
+precio unidad: 2500
+precio paquete: 13000
+stock: sí
+marca: dulce hogar
+contenido: 6 unidades
+
+#bizcocho
+ubicacion: estantería lateral
+precio unidad: 1000
+precio paquete: 5500
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#postre
+ubicacion: refrigerador
+precio unidad: 6000
+precio caja: 24000
+stock: sí
+marca: dulce hogar
+contenido: 500g
+
+#tresleches
+ubicacion: refrigerador
+precio unidad: 9500
+precio caja: 36000
+stock: sí
+marca: dulce hogar
+contenido: 800g
+
+#café
+ubicacion: cafetería
+precio vaso: 2500
+stock: sí
+marca: casero
+contenido: 250ml
+
+#jugo
+ubicacion: refrigerador
+precio vaso: 3000
+sabores: naranja, mango, lulo, mora
+stock: sí
+marca: natural
+
+#gaseosa
+ubicacion: refrigerador
+precio unidad: 2500
+marca: Coca-Cola, Pepsi, Colombiana
+contenido: 400ml
+
+#agua
+ubicacion: refrigerador
+precio unidad: 2000
+marca: Cristal, Brisa
+contenido: 600ml
+
+#queso
+ubicacion: refrigerador
+precio libra: 7500
+stock: sí
+marca: El Vaquero
+contenido: 500g
+
+#cafe
+ubicacion: barra de bebidas
+precio unidad: 1500
+stock: sí
+marca: artesanal
+contenido: 4 oz
+
+#mocaccino
+ubicacion: barra de bebidas
+precio unidad: 3200
+stock: sí
+marca: artesanal
+contenido: 8 oz
+
+#latte
+ubicacion: barra de bebidas
+precio unidad: 2800
+stock: sí
+marca: artesanal
+contenido: 8 oz
+
+#flan
+ubicacion: refrigerador
+precio unidad: 3000
+precio paquete: 16000
+stock: sí
+marca: dulce hogar
+contenido: 6 unidades
+
+#tamales
+ubicacion: vitrina caliente
+precio unidad: 6000
+stock: sí
+marca: tradicional
+
+#pan
+ubicacion: estantería lateral
+precio unidad: 1200
+precio paquete: 7000
+stock: sí
+marca: artesanal
+relleno: queso
+contenido: 6 unidades
+
+#croissants
+ubicacion: vitrina principal
+precio unidad: 2200
+precio paquete: 13200
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#roscones
+ubicacion: vitrina principal
+precio unidad: 3000
+precio caja: 18000
+stock: no
+marca: la especial
+contenido: 6 unidades
+
+#pandebonos
+ubicacion: vitrina principal
+precio unidad: 2000
+precio bolsa: 12000
+stock: no
+marca: artesanal
+contenido: 6 unidades
+
+#tortas
+ubicacion: refrigerador
+precio libra: 10500
+precio caja: 42000
+stock: sí
+marca: dulce hogar
+contenido: 1kg
+
+#pasteles
+ubicacion: refrigerador
+precio unidad: 2500
+precio paquete: 10000
+stock: no
+marca: noel
+contenido: 4 unidades
+
+#arequipes
+ubicacion:  estante de atras
+precio frasco: 4600
+precio paquete: 9200
+stock: sí
+marca: alpina
+contenido: 250g
+
+#mermeladas
+ubicacion:  estante de atras
+precio frasco: 5000
+precio paquete: 10000
+stock: sí
+marca: colanta
+contenido: 250g
+
+#tintos
+ubicacion: cafetería
+precio vaso: 1500
+precio termo: 4000
+stock: sí
+marca: casero
+contenido: 250ml
+
+#pericos
+ubicacion: cafetería
+precio vaso: 1800
+precio termo: 4500
+stock: sí
+marca: casero
+contenido: 250ml
+
+#capuccinos
+ubicacion: cafetería
+precio taza: 3500
+precio grande: 5000
+stock: sí
+marca: casero
+contenido: 300ml
+
+#aromáticas
+ubicacion: cafetería
+precio taza: 2500
+stock: sí
+marca: natural
+contenido: 250ml
+
+#malteadas
+ubicacion: cafetería
+precio vaso: 4500
+sabores: vainilla, fresa, chocolate
+stock: sí
+marca: casera
+
+#huevos
+ubicacion:  estante de atras
+precio unidad: 600
+precio docena: 7200
+stock: sí
+marca: campesino
+contenido: 12 unidades
+
+#mantequillas
+ubicacion: refrigerador
+precio unidad: 4500
+stock: sí
+marca: Alpina
+contenido: 250g
+
+#sandwiches
+ubicacion: mostrador
+precio unidad: 4500
+stock: sí
+ingredientes: jamón, queso, lechuga, tomate
+
+#empanadas
+ubicacion: vitrina caliente
+precio unidad: 1500
+precio 3x: 4000
+stock: sí
+relleno: carne o pollo
+
+#tamales
+ubicacion: vitrina caliente
+precio unidad: 6000
+stock: sí
+marca: tradicional
+
+#churros
+ubicacion: vitrina principal
+precio unidad: 1500
+precio paquete: 8000
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#cafés
+ubicacion: mostrador
+precio unidad: 1500
+precio paquete: 0
+stock: sí
+marca: juan valdez
+contenido: 1 taza
+
+#tintos
+ubicacion: mostrador
+precio unidad: 1000
+precio paquete: 0
+stock: sí
+marca: juan valdez
+contenido: 1 taza
+
+#pericos
+ubicacion: mostrador
+precio unidad: 1200
+precio paquete: 0
+stock: sí
+marca: juan valdez
+contenido: 1 taza
+
+#capuchinos
+ubicacion: mostrador
+precio unidad: 2500
+precio paquete: 0
+stock: sí
+marca: juan valdez
+contenido: 1 taza
+
+#galletas
+ubicacion: vitrina principal
+precio unidad: 1300
+precio paquete: 7500
+stock: sí
+marca: saludable
+contenido: 6 unidades
+
+#buñuelos
+ubicacion: vitrina principal
+precio unidad: 1000
+precio paquete: 6000
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#almojabanas
+ubicacion: vitrina principal
+precio unidad: 1800
+precio paquete: 10500
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#flanes
+ubicacion: refrigerador
+precio unidad: 3000
+precio paquete: 16000
+stock: sí
+marca: dulce hogar
+contenido: 6 unidades
+
+#gelatinas
+ubicacion: refrigerador
+precio unidad: 2500
+precio paquete: 13000
+stock: sí
+marca: dulce hogar
+contenido: 6 unidades
+
+#bizcochos
+ubicacion: estantería lateral
+precio unidad: 1000
+precio paquete: 5500
+stock: sí
+marca: artesanal
+contenido: 6 unidades
+
+#postres
+ubicacion: refrigerador
+precio unidad: 6000
+precio caja: 24000
+stock: sí
+marca: dulce hogar
+contenido: 500g
+
+#tresleches
+ubicacion: refrigerador
+precio unidad: 9500
+precio caja: 36000
+stock: sí
+marca: dulce hogar
+contenido: 800g
+
+#cafés
+ubicacion: cafetería
+precio vaso: 2500
+stock: sí
+marca: casero
+contenido: 250ml
+
+#jugos
+ubicacion: refrigerador
+precio vaso: 3000
+sabores: naranja, mango, lulo, mora
+stock: sí
+marca: natural
+
+#gaseosas
+ubicacion: refrigerador
+precio unidad: 2500
+marca: Coca-Cola, Pepsi, Colombiana
+contenido: 400ml
+
+#aguas
+ubicacion: refrigerador
+precio unidad: 2000
+marca: Cristal, Brisa
+contenido: 600ml
+
+#quesos
+ubicacion: refrigerador
+precio libra: 7500
+stock: sí
+marca: El Vaquero
+contenido: 500g
+
+#cafés
+ubicacion: barra de bebidas
+precio unidad: 1500
+stock: sí
+marca: artesanal
+contenido: 4 oz
+
+#mocaccinos
+ubicacion: barra de bebidas
+precio unidad: 3200
+stock: sí
+marca: artesanal
+contenido: 8 oz
+
+#lattes
+ubicacion: barra de bebidas
+precio unidad: 2800
+stock: sí
+marca: artesanal
+contenido: 8 oz
+
+#flanes
+ubicacion: refrigerador
+precio unidad: 3000
+precio paquete: 16000
+stock: sí
+marca: dulce hogar
+contenido: 6 unidades
+
+#tamales
+ubicacion: vitrina caliente
+precio unidad: 6000
+stock: sí
+marca: tradicional
+
+#panes
+ubicacion: estantería lateral
+precio unidad: 1200
+precio paquete: 7000
+stock: sí
+marca: artesanal
+contenido: 6 unidades

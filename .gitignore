@@ -7,7 +7,8 @@
 *.o
 
 # Java
-*.class
+bin/
+target/
 
 # LaTeX
 *.aux

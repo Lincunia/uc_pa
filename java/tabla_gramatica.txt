@@ -1,0 +1,47 @@
+S, interrogativo -> interrogativo S
+S, verbo -> SV
+S, determinante -> SN SV
+S, producto -> SN SV
+S, marca -> SN SV
+S, unidad -> SN SV
+S, adjetivo -> SN SV
+S, numero -> SN SV
+S, adverbio -> SN SV
+S, sustantivo -> SN SV
+
+SN, determinante -> determinante N
+SN, producto -> N
+SN, marca -> N
+SN, unidad -> N
+SN, adjetivo -> N
+SN, numero -> N
+SN, adverbio -> N
+SN, sustantivo -> N
+
+SV, verbo -> verbo SVp
+
+SVp, determinante -> SN
+SVp, producto -> SN
+SVp, marca -> SN
+SVp, unidad -> SN
+SVp, adjetivo -> SN
+SVp, numero -> SN
+SVp, adverbio -> SN
+SVp, sustantivo -> SN
+SVp, $ -> ε
+
+N, producto -> producto Np
+N, numero -> numero Np
+N, marca -> marca Np
+N, unidad -> unidad Np
+N, adjetivo -> adjetivo Np
+N, adverbio -> adverbio Np
+N, sustantivo -> sustantivo Np
+
+Np, producto -> producto Np
+Np, marca -> marca Np
+Np, unidad -> unidad Np
+Np, adjetivo -> adjetivo Np
+Np, adverbio -> adverbio Np
+Np, sustantivo -> sustantivo Np
+Np, $ -> ε

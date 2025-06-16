@@ -9,17 +9,18 @@
  * BASIC STRUCTURES
  */
 
-typedef enum {
-  false,
-  true
-} bool; // You can use #include <stdbool.h> instead
+typedef enum
+{
+    false,
+    true
+} bool;           // You can use #include <stdbool.h> instead
 #define SPEED 344 // Constant off light in (m/s)
 
 /*
  * FUNCTIONS
  */
-void clear_it(void);
-unsigned long long int distance_by_min();
-void in_out_chars(void);
+void clear_it (void);
+unsigned long long int distance_by_min ();
+void in_out_chars (void);
 
 #endif
