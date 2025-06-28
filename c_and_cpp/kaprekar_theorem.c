@@ -1,28 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "utilities.h"
 
-/*
- * TODO: Find a way to remove buffer from the input method where the program
- * runs without any other oargument
- */
-
-/*
- * I know the existance fo atoi() or strtol(), but I wanted to learn how to
- * convert a number in s function by myself
- */
-unsigned short 
-convert_to_number (char *num_as_str)
-{
-    unsigned short r_num = 0;
-    unsigned long int num_size = strlen (num_as_str), i = 0;
-    for (i = 0; i < num_size; i++)
-        {
-            r_num *= 10;
-            r_num += *(num_as_str + i) - '0';
-        }
-    return r_num;
-}
 char *
 sort_by_insertion (int num)
 {
@@ -50,7 +27,7 @@ unsigned short
 s_forward (int num)
 {
     char *arr = sort_by_insertion (num);
-    return convert_to_number (arr);
+    return char_arr_to_short (arr);
 }
 
 unsigned short
@@ -78,7 +55,7 @@ main (int argc, char **argv)
                     printf ("Not valid number");
                     return EXIT_FAILURE;
                 }
-            num = convert_to_number (argv[1]);
+            num = char_arr_to_short (argv[1]);
             goto budha;
         }
     char aux_number[5], *str;
@@ -89,7 +66,7 @@ main (int argc, char **argv)
             printf ("Not valid insertion\n");
             return EXIT_FAILURE;
         }
-    num = convert_to_number (aux_number);
+    num = char_arr_to_short (aux_number);
 budha:
     do
         {
