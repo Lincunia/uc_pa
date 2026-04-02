@@ -8,6 +8,7 @@
 
 # Java
 bin/
+lib/
 target/
 
 # LaTeX
